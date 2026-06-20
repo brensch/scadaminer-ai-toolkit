@@ -64,6 +64,17 @@ fall back to hand-written SQL → chart → cite numbers).
 
 ---
 
+## Agent Skills
+
+Skills live in [`skills/`](skills/) and can be used with the ScadaMiner MCP
+server in any Skills-capable Claude surface.
+
+| Skill | Description |
+|-------|-------------|
+| [`nem-market-analysis`](skills/nem-market-analysis/SKILL.md) | Answer Australian NEM / AEMO questions (prices, FCAS, generation, interconnectors, constraints, demand, bids, revenue) via the ScadaMiner MCP server: resolve entities, prefer validated query capabilities, write safe read-only SQL only as a fallback, and return cited numbers with charts. |
+
+---
+
 ## How it works
 
 ScadaMiner is a remote [MCP](https://modelcontextprotocol.io) server with OAuth.
