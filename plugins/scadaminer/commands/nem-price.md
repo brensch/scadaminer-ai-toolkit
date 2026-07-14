@@ -3,11 +3,11 @@ description: NEM spot or FCAS price for a region over a time period
 argument-hint: "[region] [period] e.g. NSW1 last 7 days"
 ---
 
-The user wants NEM price data from the ScadaMiner warehouse.
+The user wants NEM price data from the SCADA Miner warehouse.
 
 Request: $ARGUMENTS
 
-Follow the ScadaMiner workflow:
+Follow the SCADA Miner workflow:
 
 1. Call `start_question` with the user's request to open a trace, and pass the
    returned `question_id` on every later tool call this turn.

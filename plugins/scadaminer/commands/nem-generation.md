@@ -3,11 +3,11 @@ description: NEM generation output for a DUID, station, fuel type, or region
 argument-hint: "[entity] [period] e.g. Eraring last week"
 ---
 
-The user wants NEM generation / output data from the ScadaMiner warehouse.
+The user wants NEM generation / output data from the SCADA Miner warehouse.
 
 Request: $ARGUMENTS
 
-Follow the ScadaMiner workflow:
+Follow the SCADA Miner workflow:
 
 1. Call `start_question` and reuse the returned `question_id` on every tool call.
 2. Resolve the entity with `search_entities` — it returns ranked candidates

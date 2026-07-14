@@ -1,9 +1,9 @@
 {
   "name": "scadaminer",
   "version": "0.1.0",
-  "description": "Query the Australian NEM (spot prices, generation, FCAS, interconnectors, constraints) via the ScadaMiner MCP server, with NEM slash commands and an analyst subagent.",
+  "description": "Query the Australian NEM (spot prices, generation, FCAS, interconnectors, constraints) via the SCADA Miner MCP server, with NEM slash commands and an analyst subagent.",
   "author": {
-    "name": "ScadaMiner",
+    "name": "SCADA Miner",
     "url": "https://chat.scadaminer.com"
   },
   "homepage": "https://chat.scadaminer.com",

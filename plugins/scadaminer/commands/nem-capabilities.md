@@ -1,8 +1,8 @@
 ---
-description: List the validated NEM question shapes ScadaMiner can answer
+description: List the validated NEM question shapes SCADA Miner can answer
 ---
 
-Show the user what the ScadaMiner warehouse can answer out of the box.
+Show the user what the SCADA Miner warehouse can answer out of the box.
 
 1. Call `list_capabilities` to retrieve the registered, validated SQL builders
    (prices, demand, generation output, revenue, constraints, FCAS,
