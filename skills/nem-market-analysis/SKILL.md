@@ -3,20 +3,20 @@ name: nem-market-analysis
 description: >-
   Answer questions about Australia's National Electricity Market (NEM) / AEMO
   data — spot and FCAS prices, generation output, interconnector flows, network
-  constraints, demand, bids, and generator revenue — using the ScadaMiner MCP
+  constraints, demand, bids, and generator revenue — using the SCADA Miner MCP
   server. Use whenever a question concerns NEM/AEMO electricity market data and
-  the ScadaMiner tools are available. Guides Claude to resolve entities, prefer
+  the SCADA Miner tools are available. Guides Claude to resolve entities, prefer
   validated query capabilities, write safe read-only SQL only as a fallback, and
   return cited numbers with charts.
 ---
 
-# NEM Market Analysis (ScadaMiner)
+# NEM Market Analysis (SCADA Miner)
 
 This skill helps you answer Australian National Electricity Market (NEM)
-questions accurately using the **ScadaMiner** MCP server, which exposes a
+questions accurately using the **SCADA Miner** MCP server, which exposes a
 ClickHouse warehouse of AEMO market data. Apply it whenever the user asks about
 NEM/AEMO topics (prices, generation, FCAS, interconnectors, constraints, demand,
-bids, revenue) and the ScadaMiner tools are connected.
+bids, revenue) and the SCADA Miner tools are connected.
 
 ## Key facts
 

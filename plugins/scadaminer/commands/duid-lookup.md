@@ -3,7 +3,7 @@ description: Resolve a NEM station or DUID and show its key facts
 argument-hint: "[station or DUID] e.g. Hornsdale or HPRG1"
 ---
 
-The user wants to identify a NEM facility in the ScadaMiner warehouse.
+The user wants to identify a NEM facility in the SCADA Miner warehouse.
 
 Lookup: $ARGUMENTS
 

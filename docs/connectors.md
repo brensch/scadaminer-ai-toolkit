@@ -1,4 +1,4 @@
-# Adding ScadaMiner as a custom connector
+# Adding SCADA Miner as a custom connector
 
 For **Claude.ai (web)** and **Claude Desktop** users. (Claude Code users should
 use the [plugin](../README.md#claude-code--plugin-recommended) instead.)
@@ -9,7 +9,7 @@ The connector URL is:
 https://chat.scadaminer.com/mcp
 ```
 
-ScadaMiner uses OAuth — you'll sign in through a browser window the first time.
+SCADA Miner uses OAuth — you'll sign in through a browser window the first time.
 Because the server supports Dynamic Client Registration, you do **not** need to
 paste a client ID or secret.
 
@@ -34,7 +34,7 @@ A workspace **Owner** must enable the connector first:
 
 Once connected, just ask NEM questions in chat — e.g. "What was the average NSW1
 spot price last week?" or "Compare black coal vs wind generation in QLD1
-yesterday." Claude will call the ScadaMiner tools to resolve entities, run
+yesterday." Claude will call the SCADA Miner tools to resolve entities, run
 validated queries, and chart the results.
 
 ## Troubleshooting

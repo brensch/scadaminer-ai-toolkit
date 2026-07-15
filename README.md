@@ -1,12 +1,12 @@
-# ScadaMiner AI Toolkit
+# SCADA Miner AI Toolkit
 
-Connect Claude to **[ScadaMiner](https://chat.scadaminer.com)** — an AI-ready data
+Connect Claude to **[SCADA Miner](https://chat.scadaminer.com)** — an AI-ready data
 warehouse for Australia's National Electricity Market (NEM). Ask natural-language
 questions about AEMO dispatch data: spot prices, generation output, FCAS markets,
 interconnector flows, constraints, bids, and more. Claude turns them into safe,
 read-only SQL against the warehouse and answers with numbers and charts.
 
-The toolkit is a thin wrapper around the ScadaMiner remote MCP server
+The toolkit is a thin wrapper around the SCADA Miner remote MCP server
 (`https://chat.scadaminer.com/mcp`). The server does the work; this repo just makes
 it easy to add.
 
@@ -26,7 +26,7 @@ analyst subagent.
 /plugin install scadaminer@scadaminer
 ```
 
-You'll be prompted to sign in (OAuth) the first time Claude uses a ScadaMiner tool.
+You'll be prompted to sign in (OAuth) the first time Claude uses a SCADA Miner tool.
 
 ### Claude Code — connector only (one-liner)
 
@@ -58,7 +58,7 @@ Team/Enterprise notes.
 | `/scadaminer:duid-lookup` | Resolve a station or DUID and show its facts |
 | `/scadaminer:nem-capabilities` | List the validated question shapes the warehouse answers |
 
-**Subagent:** `nem-analyst` — a focused agent that follows the ScadaMiner
+**Subagent:** `nem-analyst` — a focused agent that follows the SCADA Miner
 capability-first workflow (resolve entities → prefer a validated capability →
 fall back to hand-written SQL → chart → cite numbers).
 
@@ -66,18 +66,18 @@ fall back to hand-written SQL → chart → cite numbers).
 
 ## Agent Skills
 
-Skills live in [`skills/`](skills/) and can be used with the ScadaMiner MCP
+Skills live in [`skills/`](skills/) and can be used with the SCADA Miner MCP
 server in any Skills-capable Claude surface.
 
 | Skill | Description |
 |-------|-------------|
-| [`nem-market-analysis`](skills/nem-market-analysis/SKILL.md) | Answer Australian NEM / AEMO questions (prices, FCAS, generation, interconnectors, constraints, demand, bids, revenue) via the ScadaMiner MCP server: resolve entities, prefer validated query capabilities, write safe read-only SQL only as a fallback, and return cited numbers with charts. |
+| [`nem-market-analysis`](skills/nem-market-analysis/SKILL.md) | Answer Australian NEM / AEMO questions (prices, FCAS, generation, interconnectors, constraints, demand, bids, revenue) via the SCADA Miner MCP server: resolve entities, prefer validated query capabilities, write safe read-only SQL only as a fallback, and return cited numbers with charts. |
 
 ---
 
 ## How it works
 
-ScadaMiner is a remote [MCP](https://modelcontextprotocol.io) server with OAuth.
+SCADA Miner is a remote [MCP](https://modelcontextprotocol.io) server with OAuth.
 Its tools: `search_entities`, `get_data_freshness`, `list_tables`,
 `search_columns`, `get_table_schema`, `execute_sql`, `list_capabilities`,
 `run_capability`, `build_chart`, `get_concept`, plus `start_question` for

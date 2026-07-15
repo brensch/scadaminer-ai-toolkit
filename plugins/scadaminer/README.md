@@ -1,6 +1,6 @@
 # scadaminer (Claude Code plugin)
 
-Adds the [ScadaMiner](https://chat.scadaminer.com) NEM data connector to Claude
+Adds the [SCADA Miner](https://chat.scadaminer.com) NEM data connector to Claude
 Code, plus NEM slash commands and an analyst subagent.
 
 ## Install
@@ -10,7 +10,7 @@ Code, plus NEM slash commands and an analyst subagent.
 /plugin install scadaminer@scadaminer
 ```
 
-Sign in (OAuth) when Claude first uses a ScadaMiner tool.
+Sign in (OAuth) when Claude first uses a SCADA Miner tool.
 
 ## Contents
 
