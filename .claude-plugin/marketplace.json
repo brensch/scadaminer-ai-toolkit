@@ -5,16 +5,28 @@
     "url": "https://chat.scadaminer.com"
   },
   "metadata": {
-    "description": "SCADA Miner connectors and tooling for Australia's National Electricity Market (NEM).",
+    "description": "NEM Explorer (SCADA Miner) for Claude: Australia's National Electricity Market data.",
     "version": "0.1.0"
   },
   "plugins": [
     {
       "name": "scadaminer",
+      "displayName": "NEM Explorer",
       "source": "./plugins/scadaminer",
-      "description": "Query the Australian NEM (spot prices, generation, FCAS, interconnectors, constraints) via the SCADA Miner MCP server, with NEM slash commands and an analyst subagent.",
-      "version": "0.1.0",
-      "keywords": ["nem", "aemo", "energy", "electricity", "australia", "clickhouse", "mcp"]
+      "description": "NEM Explorer by SCADA Miner: query Australia's National Electricity Market (spot prices, generation, FCAS, interconnectors, constraints) from AEMO data, with NEM slash commands and an analyst subagent.",
+      "version": "0.2.0",
+      "keywords": [
+        "nem explorer",
+        "nem",
+        "aemo",
+        "scada miner",
+        "energy",
+        "electricity",
+        "australia",
+        "spot price",
+        "fcas",
+        "mcp"
+      ]
     }
   ]
 }

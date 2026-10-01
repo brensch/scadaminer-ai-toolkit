@@ -16,17 +16,37 @@ it easy to add.
 
 Pick the path that matches how you use Claude.
 
-### Claude Code — plugin (recommended)
+### Claude Desktop app (Windows / Mac) — plugin (recommended)
 
-Adds the connector **plus** NEM-specific slash commands and a pre-prompted NEM
-analyst subagent.
+Adds the NEM Explorer connector **plus** NEM slash commands and an analyst
+subagent. It's saved to your claude.ai account, so it also shows up in Claude Code
+sessions, chat, and Cowork. Don't type `/plugin` here: the desktop app adds
+marketplaces through its own menu.
+
+1. Open **Customize → Plugins** (or Settings → Plugins).
+2. Click **+ Add** → **Add marketplace** and enter `brensch/scadaminer-ai-toolkit`.
+3. On the **Discover** tab, search **NEM Explorer** and click **Add**.
+4. Open the plugin's **Connectors** tab and click **Connect**, then sign in.
+
+Requires Claude Pro, Max, Team, or Enterprise.
+
+### Claude Code CLI (terminal) — plugin (recommended)
+
+Inside a Claude Code session (v2.1.275 or later), one command adds the marketplace
+and installs the plugin:
 
 ```
-/plugin marketplace add brensch/scadaminer-ai-toolkit
-/plugin install scadaminer@scadaminer
+/plugin install scadaminer --marketplace brensch/scadaminer-ai-toolkit
 ```
 
-You'll be prompted to sign in (OAuth) the first time Claude uses a SCADA Miner tool.
+Or from your shell, without opening a session:
+
+```
+claude plugin marketplace add brensch/scadaminer-ai-toolkit
+claude plugin install scadaminer@scadaminer
+```
+
+You'll be prompted to sign in (OAuth) the first time Claude uses a NEM Explorer tool.
 
 ### Claude Code — connector only (one-liner)
 

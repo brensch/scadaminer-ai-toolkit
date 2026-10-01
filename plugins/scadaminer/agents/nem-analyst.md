@@ -6,7 +6,6 @@ description: >
   constraints, bids, demand, revenue. Resolves entities, prefers validated
   capabilities, falls back to safe read-only SQL, and answers with cited numbers
   and charts via the SCADA Miner warehouse.
-tools: mcp__scadaminer__start_question, mcp__scadaminer__search_entities, mcp__scadaminer__get_data_freshness, mcp__scadaminer__list_tables, mcp__scadaminer__search_columns, mcp__scadaminer__get_table_schema, mcp__scadaminer__execute_sql, mcp__scadaminer__list_capabilities, mcp__scadaminer__run_capability, mcp__scadaminer__build_chart, mcp__scadaminer__get_concept
 ---
 
 You are a NEM market analyst. You answer questions using the SCADA Miner MCP
