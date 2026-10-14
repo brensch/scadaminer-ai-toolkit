@@ -1,6 +1,6 @@
-# ScadaMiner AI Toolkit
+# SCADA Miner AI Toolkit
 
-Connect your AI agent to **[ScadaMiner](https://chat.scadaminer.com)**, a data
+Connect your AI agent to **[SCADA Miner](https://chat.scadaminer.com)**, a data
 warehouse for Australia's National Electricity Market (NEM). Ask questions about
 AEMO market data in plain English (spot and FCAS prices, generation,
 interconnectors, constraints, bids, and more) and get answers with numbers and

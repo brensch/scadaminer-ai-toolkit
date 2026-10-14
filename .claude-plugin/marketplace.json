@@ -1,17 +1,17 @@
 {
   "name": "scadaminer",
   "owner": {
-    "name": "ScadaMiner",
+    "name": "SCADA Miner",
     "url": "https://chat.scadaminer.com"
   },
   "metadata": {
-    "description": "ScadaMiner connector for Australia's National Electricity Market (NEM)."
+    "description": "SCADA Miner connector for Australia's National Electricity Market (NEM)."
   },
   "plugins": [
     {
       "name": "scadaminer",
       "source": "./plugins/scadaminer",
-      "description": "Query Australia's National Electricity Market (NEM): spot and FCAS prices, generation, interconnectors, constraints, and more, via the ScadaMiner MCP server.",
+      "description": "Query Australia's National Electricity Market (NEM): spot and FCAS prices, generation, interconnectors, constraints, and more, via the SCADA Miner MCP server.",
       "category": "data"
     }
   ]
