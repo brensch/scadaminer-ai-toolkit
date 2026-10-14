@@ -1,8 +1,8 @@
-# SCADA Miner AI Toolkit
+# NEM Explorer for Claude
 
-Connect your AI agent to **[SCADA Miner](https://chat.scadaminer.com)**, a data
-warehouse for Australia's National Electricity Market (NEM). Ask questions about
-AEMO market data in plain English (spot and FCAS prices, generation,
+Connect your AI agent to **NEM Explorer** by [SCADA Miner](https://chat.scadaminer.com),
+a data warehouse for Australia's National Electricity Market (NEM). Ask questions
+about AEMO market data in plain English (spot and FCAS prices, generation,
 interconnectors, constraints, bids, and more) and get answers with numbers and
 charts.
 
@@ -18,20 +18,40 @@ with dynamic client registration; no keys to paste.
 
 ## Install
 
-**Claude Code (plugin)**
+**Claude Desktop app (Windows / Mac)**
+
+The desktop app adds marketplaces through its own menu, not `/plugin`.
+
+1. Open **Customize → Plugins** (or Settings → Plugins).
+2. Click **+ Add → Add marketplace** and enter `brensch/scadaminer-ai-toolkit`.
+3. On the **Discover** tab, search **NEM Explorer** and click **Add**.
+4. Open the plugin's **Connectors** tab, click **Connect**, and sign in.
+
+Requires Claude Pro, Max, Team, or Enterprise. The plugin is saved to your
+claude.ai account, so it also shows up in Claude Code sessions, chat, and Cowork.
+
+**Claude Code CLI**
+
+Inside a session (v2.1.275 or later):
 
 ```
-/plugin marketplace add brensch/scadaminer-ai-toolkit
-/plugin install scadaminer@scadaminer
+/plugin install scadaminer --marketplace brensch/scadaminer-ai-toolkit
 ```
 
-**Claude Code (without the plugin)**
+Or from your shell:
+
+```
+claude plugin marketplace add brensch/scadaminer-ai-toolkit
+claude plugin install scadaminer@scadaminer
+```
+
+Without the plugin:
 
 ```
 claude mcp add --transport http scadaminer https://chat.scadaminer.com/mcp
 ```
 
-**Claude.ai / Claude Desktop**
+**Claude.ai (connector only)**
 
 Settings → Connectors → Add custom connector → paste
 `https://chat.scadaminer.com/mcp` → sign in. On Team/Enterprise plans an owner
