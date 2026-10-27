@@ -1,13 +1,15 @@
 {
   "name": "scadaminer",
   "displayName": "NEM Explorer",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "NEM Explorer: ask questions about Australia's National Electricity Market (NEM) using AEMO data. Spot and wholesale electricity prices, generation by fuel (solar, wind, coal, gas, hydro, batteries), demand, FCAS, interconnector flows, constraints and bids for NSW, QLD, VIC, SA and TAS. By SCADA Miner.",
   "author": {
     "name": "SCADA Miner",
     "url": "https://chat.scadaminer.com"
   },
   "homepage": "https://chat.scadaminer.com",
+  "privacyPolicyUrl": "https://chat.scadaminer.com/privacy",
+  "icon": ".claude-plugin/icon.png",
   "repository": "https://github.com/brensch/scadaminer-ai-toolkit",
   "license": "MIT",
   "keywords": [
