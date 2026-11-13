@@ -1,10 +1,11 @@
-# NEM Explorer for Claude
+# NEM Explorer: AEMO MCP server for Claude
 
-Connect your AI agent to **NEM Explorer** by [SCADA Miner](https://chat.scadaminer.com),
-a data warehouse for Australia's National Electricity Market (NEM). Ask questions
-about AEMO market data in plain English (spot and FCAS prices, generation,
-interconnectors, constraints, bids, and more) and get answers with numbers and
-charts.
+**NEM Explorer** by [SCADA Miner](https://www.scadaminer.com/nem-explorer-aemo-data-chatbot/)
+is a hosted MCP server for AEMO data from Australia's National Electricity Market
+(NEM). Connect Claude or any other MCP client, ask about spot and FCAS prices,
+generation, interconnectors, constraints, bids and more in plain English, and get
+answers with numbers and charts. Setup for other agents is in the
+[AEMO MCP server docs](https://chat.scadaminer.com/docs).
 
 Everything lives on the remote MCP server:
 
